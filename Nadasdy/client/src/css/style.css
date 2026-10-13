@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Elmosott háttérkép (iskola.webp) */
+.bg-image-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/iskola.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    transform: scale(1.08);
+    z-index: -2;
+}
+
+/* Sötétítő réteg */
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    z-index: -1;
+}
+
+/* Üveghatású kártya */
+.glass-card {
+    background: rgba(30, 41, 59, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+input[type="checkbox"], input[type="radio"] {
+    cursor: pointer;
+}
